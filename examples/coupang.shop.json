@@ -1,0 +1,13 @@
+{
+  "name": "我的韩国店铺",
+  "platform": "coupang",
+  "vendor_id": "填写真实卖家编号",
+  "access_key_env": "COUPANG_ACCESS_KEY",
+  "secret_key_env": "COUPANG_SECRET_KEY",
+  "media": {
+    "type": "wordpress",
+    "url": "https://media.example.com",
+    "username_env": "WP_MEDIA_USER",
+    "password_env": "WP_APPLICATION_PASSWORD"
+  }
+}

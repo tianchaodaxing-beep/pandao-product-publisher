@@ -1,0 +1,12 @@
+.env
+*.sqlite*
+__pycache__/
+*.egg-info/
+.venv/
+build/
+dist/
+runtime/
+*.log
+shop.json
+资料/
+清单/

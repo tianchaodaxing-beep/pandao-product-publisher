@@ -1,0 +1,13 @@
+{
+  "name": "我的独立站",
+  "platform": "woocommerce",
+  "url": "https://shop.example.com",
+  "consumer_key_env": "WOO_CONSUMER_KEY",
+  "consumer_secret_env": "WOO_CONSUMER_SECRET",
+  "media": {
+    "type": "wordpress",
+    "url": "https://shop.example.com",
+    "username_env": "WP_MEDIA_USER",
+    "password_env": "WP_APPLICATION_PASSWORD"
+  }
+}

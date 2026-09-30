@@ -1,0 +1,10 @@
+{
+  "sku": "DEMO-CUP-001",
+  "title": "演示商品：随行水杯",
+  "description": "<p>这是说明资料格式的演示商品，不用于真实店铺上架。</p>",
+  "images": ["main.jpg"],
+  "variants": [
+    {"sku": "DEMO-CUP-WHITE", "price": "19.90", "stock": 5, "attributes": {"颜色": "白色"}},
+    {"sku": "DEMO-CUP-BLUE", "price": "19.90", "stock": 3, "attributes": {"颜色": "蓝色"}}
+  ]
+}
