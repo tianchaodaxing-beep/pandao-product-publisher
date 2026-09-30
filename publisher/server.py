@@ -40,7 +40,7 @@ def create_server(port, runtime):
         def do_GET(self):
             if not self.valid_host():
                 return self.reply({"error": "请从本机入口打开"}, 403)
-            if self.path == "/":
+            if self.path.split("?", 1)[0] == "/":
                 html = Path(__file__).with_name("web.html").read_text(encoding="utf-8").replace("__TOKEN__", token)
                 return self.reply(html.encode(), mime="text/html; charset=utf-8")
             if not self.authorized():

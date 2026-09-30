@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pandao-product-publisher"
-version = "0.1.0"
+version = "0.1.1"
 description = "读取商品资料，批量上传图片、创建商品并核对平台结果"
 requires-python = ">=3.11"
 dependencies = ["Pillow>=11.0,<13"]

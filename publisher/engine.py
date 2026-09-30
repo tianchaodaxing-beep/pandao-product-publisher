@@ -8,6 +8,7 @@ from .state import State
 from .media import WordPressMedia
 from .woocommerce import WooCommerce
 from .coupang import Coupang
+from .i18n import write_summary
 
 
 def run_plan(folder, runtime, sleeper=time.sleep):
@@ -50,6 +51,7 @@ def run_plan(folder, runtime, sleeper=time.sleep):
             state.close()
     report = summarize(plan, results)
     write_json(folder / "result.json", report)
+    write_summary(folder, report)
     rows = ["# 商品执行结果", "", f"店铺：{config['name']}", f"完成核对：{report['passed']} / {report['total']} 个商品", ""]
     for result in results:
         rows.append(f"- {result['sku']}：{result['status']}" + (f"；商品编号 {result['id']}" if result.get("id") else ""))

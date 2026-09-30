@@ -34,6 +34,14 @@ def load_products(folder):
     if csv_path.exists():
         with csv_path.open(encoding="utf-8-sig", newline="") as handle:
             rows = list(csv.DictReader(handle))
+        aliases = {"商品编码": "sku", "商品名称": "title", "商品描述": "description",
+                   "售价": "price", "库存": "stock", "分类编号": "categories", "图片": "images"}
+        for row in rows:
+            for chinese, english in aliases.items():
+                if english in row:
+                    if chinese in row and row[chinese] != row[english]:
+                        raise PublishError("中英文列值不同，请只保留一组列名：" + english)
+                    row[chinese] = row[english]
         if not rows or len(rows) > 500:
             raise PublishError("商品表格需包含 1 至 500 个商品")
         try:

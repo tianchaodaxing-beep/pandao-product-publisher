@@ -258,6 +258,8 @@ class PublisherTests(unittest.TestCase):
         try:
             html = urllib.request.urlopen(url).read().decode()
             self.assertIn("把商品资料交给店铺", html)
+            english_entry = urllib.request.urlopen(url + "/?lang=en").read().decode()
+            self.assertIn("PandaoLang", english_entry)
             with self.assertRaises(urllib.error.HTTPError) as blocked:
                 urllib.request.urlopen(urllib.request.Request(url + "/api/plan", b"{}", method="POST"))
             self.assertEqual(blocked.exception.code, 403)
