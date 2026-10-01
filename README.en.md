@@ -95,3 +95,7 @@ After execution, read `执行结论.md`, `Summary.en.md` or machine-readable `re
 - Naver, Shopify, Cafe24, browser autofill and scheduled execution are not supported.
 
 MIT licensed. Self-host the tool or add adapters for other platforms.
+
+## Contact
+
+Project enquiries and collaboration: [tianchaodaxing@gmail.com](mailto:tianchaodaxing@gmail.com)

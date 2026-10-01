@@ -94,3 +94,7 @@ python -m publisher inspect --plan "清单/第一批"
 - 暂未支持 Naver、Shopify、Cafe24、浏览器自动填写和定时运行。
 
 项目使用 MIT 许可证。可自部署，也可为其他平台增加适配。
+
+## Contact
+
+Project enquiries and collaboration: [tianchaodaxing@gmail.com](mailto:tianchaodaxing@gmail.com)
